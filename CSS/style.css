@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin-left: 10%;
+    margin-right:10%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+#mainText{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.subtext{
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+.aboutUs{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+.titles{
+    font-size:50px ;
+}
+.subtext2{
+    font-size: 30px;
+}
+
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 12px;
+    cursor: pointer;
+    flex: 0.5;
+    color: #fff;
+    transition: flex 0.75s ease-in;
+    position: relative;
+}
+
+.panel h3 {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+    .subtext2{
+        font-size: 20px;
+    }
+}
