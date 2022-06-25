@@ -64,8 +64,10 @@ function check(){
     let userPw = document.getElementById('userPw');
 
     if(userName.value == storedName && userPw.value == storedPw){
-        // alert('You are logged in.')
-       location.href ='/HTML/index.html';
+        alert('You are logged in.')
+        // let aTag = document.querySelector("a");
+        aTag.addEventListener("href","HTML/index.html")
+      //  location.href ='/HTML/index.html';
      //let logButton = document.querySelector('#login_btn').innerHTML = "You are logged in."+window.location.href = 'HTML/index.html';
      // location.href = '/HTML/index.html'
         // let url = "/HTML/index.html"
