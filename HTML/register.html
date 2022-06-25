@@ -12,24 +12,44 @@
     <nav class="nav justify-content-center ">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="/HTML/index.html" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Recipes</a></li>
+          <li class="nav-item"><a href="/HTML/index.html" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="/HTML/breakfast.html" class="nav-link px-2 text-muted">Breakfast</a></li>
+          <li class="nav-item"><a href="/HTML/lunch.html" class="nav-link px-2 text-muted">Lunch</a></li>
+          <li class="nav-item"><a href="/HTML/dinner.html" class="nav-link px-2 text-muted">Dinner</a></li>
           <li class="nav-item"><a href="/HTML/register.html" class="nav-link px-2 text-muted">Sign Up</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sign In</a></li>
+          <li class="nav-item"><a href="/HTML/login.html" class="nav-link px-2 text-muted">Sign In</a></li>
         </ul>
     </nav>
-        <video autoplay muted loop id="myVideo">
+        <!-- <video autoplay muted loop id="myVideo">
             <source src="/Video/background2.mp4" type="video/mp4">
-          </video>
+          </video> -->
 <div class="bg-img">
     <div class="SignUp">
-        
         <form name='form-SignUp'>
+            
             <h1>REGISTER</h1>
-            <label for="name">Email</label>
+
+            <label for="radioOne" class="radio" >Mr</label>
+            <input type="radio" 
+                   value="None"
+                   id="radioMr"
+                   name="account" checked/>
+            
+            <label for="radioTwo" class="radio">Ms</label>
+            <input type="radio"
+                   value="None" 
+                   id="radioMs" 
+                   name="account" /><br>
+
+            <label for="name">Name</label>
+            <input type="text"
+                    id="name" 
+                    placeholder="Username" required>
+           
+            <label for="email">Email</label>
             <input type="email"
-                   id="name" 
-                   placeholder="Username" required>
+                   id="email" 
+                   placeholder="Email" required>
     
             <label for="pw">Password</label>
             <input type="password"
@@ -43,15 +63,17 @@
         </form>
     </div>
 </div>
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="/HTML/index.html" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Recipes</a></li>
-         
-        </ul>
-        <p class="text-center text-muted">© 2021 Recipes, Inc</p>
-      </footer>
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="/HTML/index.html" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="/HTML/breakfast.html" class="nav-link px-2 text-muted">Breakfast</a></li>
+      <li class="nav-item"><a href="/HTML/lunch.html" class="nav-link px-2 text-muted">Lunch</a></li>
+      <li class="nav-item"><a href="/HTML/dinner.html" class="nav-link px-2 text-muted">Dinner</a></li>
+    </ul>
+
+    <p class="text-center text-muted">© 2021 Recipes, Inc</p>
+  </footer>
 </body>
 <script src="/JS/script.js"></script>
 </html>
